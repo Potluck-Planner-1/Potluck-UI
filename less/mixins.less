@@ -1,9 +1,20 @@
 /// repeated styles
 
+@media( max-width: 800px ) {
+    font-size: 1.8rem;
+    padding: 0 10px;
+  }
 
 
 
+  .buttons(@width, @height) {
+    color: #B4BBC5;
+    background-color: #004B4E;
+    @width: 150px;
+    @height:40px;
+  }
 
-
-
-
+  .bordered (){
+    border-top: dotted 2px #FB9800;
+    margin-bottom: 8rem;
+  }

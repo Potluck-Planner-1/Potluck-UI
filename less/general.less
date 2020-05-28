@@ -2,6 +2,123 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 62.5%;
 }
 
+
+body{
+    background-color: @background-color;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .indexHeader {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        background-image: url(/images/plp1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 75%;
+        margin: 1.4rem;
+        height: 80vh;
+        width: 85%;
+        }// closes index header
+        .aboutHeader {
+            display: flex;
+            justify-content: flex-start;
+            align-content: center;
+            flex-wrap: wrap;
+            background-image: url(/images/plp4.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 75%;
+            margin: 0;
+            height: 80vh;
+            width: 85%;
+            }// closes about header
+
+        button{
+        margin: 1.4rem;
+        padding: .8rem;
+        height: 50px;
+        width: 80px;
+        }//closes button
+        h1{
+        display: flex;
+        justify-content: center; 
+        color: #0E373B;
+        text-shadow: 2px 2px white;
+        font-family: 'Great Vibes', cursive;
+        font-size: 8rem;
+        font-weight: bold;
+        src: url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        }//closes h1
+    .gallery {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 40%;
+        height: 40%;
+
+        h2{
+            display: flex;
+            justify-content: center;
+            color: #0E373B;
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5rem;
+            font-weight: bold;
+            src: url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        }// closes h2
+        h3{
+            display: flex;
+            justify-content: center;
+            color: #0E373B;
+            font-family: 'Great Vibes', cursive;
+            font-size: 1.5rem;
+            font-weight: bold;
+            src: url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap'); 
+        }//closes h3
+        .galleryPic{
+            display: flex;
+            justify-content: center;
+        }// closes galleryPic
+        .pic1{
+            background-image: url(/images/karmenDurbin.png);
+        }// closes pic1
+        .pic2{
+            background-image: url(/images/nickUssery.jpeg);
+        }//closes pic2
+        .pic3{
+            background-image: url(/images/prakashSingh.jpeg);
+        }// closes pic 3
+        .pic4 {
+            background-image: url(/images/locGiang.jpeg);
+        }//closes pic 4
+    }// closes main gallery
+    .section1{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        .box1{
+            width: 45%;
+            height: 45%;
+        }//closes info1
+        .box2{
+            width: 45%;
+            height: 45%;
+        }//closes info2
+    }//closes section 1
+  
+
+}//closes body
