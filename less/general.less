@@ -4,6 +4,20 @@
     padding: 0;
 }
 
+.indexHeader {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background-image: url(/images/plp1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 75%;
+    margin: 1.4rem;
+    // height: 80vh;
+    width: 100%;
+    }// closes index header
 
 body{
     background-color: @background-color;
@@ -16,36 +30,6 @@ body{
         align-content: center;
         justify-content: center;
     }
-
-    .indexHeader {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-wrap: wrap;
-        background-image: url(/images/plp1.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        opacity: 75%;
-        margin: 1.4rem;
-        height: 80vh;
-        width: 85%;
-        }// closes index header
-        .aboutHeader {
-            display: flex;
-            justify-content: flex-start;
-            align-content: center;
-            flex-wrap: wrap;
-            background-image: url(/images/plp4.jpg);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            opacity: 75%;
-            margin: 0;
-            height: 80vh;
-            width: 85%;
-            }// closes about header
-
         button{
         margin: 1.4rem;
         padding: .8rem;
@@ -55,6 +39,7 @@ body{
         h1{
         display: flex;
         justify-content: center; 
+        align-content: center;
         color: #0E373B;
         text-shadow: 2px 2px white;
         font-family: 'Great Vibes', cursive;
@@ -62,18 +47,74 @@ body{
         font-weight: bold;
         src: url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
         }//closes h1
+    .section1{
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        width: 80%;
+        border: solid 5px #FB9800;
+        margin: 1.8rem;
+        padding: 1.8rem;
+        li{
+            display: flex;
+            justify-content: flex-start;
+            align-content: left;
+            padding: 1rem;
+            margin: 1rem;
+            font-size: 1.4rem;
+        }
+        .box1 {
+            width: 350px;
+            height: 350px;
+        }//closes info1
+    }//closes section 1
+.section2{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 80%;
+    border: solid 5px #FB9800;
+    margin: 1.8rem;
+    padding: 1.8rem;
+    li{
+        display: flex;
+        justify-content: flex-start;
+        align-content: left;
+        padding: 1rem;
+        margin: 1rem;
+        font-size: 1.4rem;
+    }
+    .box2 {
+        width: 350px;
+        height: 350px;
+    }//closes info2
+}
+
+.aboutHeader {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background-image: url(/images/plp1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 75%;
+    margin: 1.4rem;
+    width: 100%;
+    }// closes about header
+
     .gallery {
         display: flex;
         justify-content: space-between;
         align-content: center;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
-        width: 40%;
-        height: 40%;
-
+    
         h2{
             display: flex;
             justify-content: center;
+            flex-direction: row;
             color: #0E373B;
             font-family: 'Great Vibes', cursive;
             font-size: 2.5rem;
@@ -89,36 +130,35 @@ body{
             font-weight: bold;
             src: url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap'); 
         }//closes h3
-        .galleryPic{
-            display: flex;
-            justify-content: center;
-        }// closes galleryPic
         .pic1{
             background-image: url(/images/karmenDurbin.png);
+            width: 250px;
+            height: 250px;
+            margin: 1.8rem;
+            padding: 1.8rem;
         }// closes pic1
         .pic2{
             background-image: url(/images/nickUssery.jpeg);
+            width: 250px;
+            height: 250px;
+            margin: 1.8rem;
+            padding: 1.8rem;
         }//closes pic2
         .pic3{
             background-image: url(/images/prakashSingh.jpeg);
+            width: 250px;
+            height: 250px;
+            margin: 1.8rem;
+            padding: 1.8rem;
         }// closes pic 3
         .pic4 {
             background-image: url(/images/locGiang.jpeg);
+            width: 250px;
+            height: 250px;
+            margin: 1.8rem;
+            padding: 1.8rem;
         }//closes pic 4
     }// closes main gallery
-    .section1{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        .box1{
-            width: 45%;
-            height: 45%;
-        }//closes info1
-        .box2{
-            width: 45%;
-            height: 45%;
-        }//closes info2
-    }//closes section 1
-  
+
 
 }//closes body
