@@ -1,41 +1,56 @@
 /// basic styling
-* {
-    margin: 0;
-    padding: 0;
-}
 
-.indexHeader {
+body{
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    background-color: #B4BBC5;
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    background-image: url(/images/plp1.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 75%;
-    margin: 1.4rem;
-    // height: 80vh;
-    width: 100%;
-    }// closes index header
-
-body{
-    background-color: @background-color;
-    display: flex;
-    justify-content: center;
-    align-content: center;
     .wrapper{
         display: flex;
         flex-direction: column;
         align-content: center;
         justify-content: center;
-    }
-        button{
+    }// closes the wrapper
+    header {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        background-image: url(/images/plp1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 75%;
         margin: 1.4rem;
-        padding: .8rem;
-        height: 50px;
-        width: 80px;
-        }//closes button
+        width: 90%;
+        }// closes header
+        /// navigation styling 
+    
+    .navbar{
+    margin: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+    height: 22%;
+    background-color: #FC7C00;
+    padding: 1.8rem;
+        a{
+        color: #03161D;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.6rem;
+        font-weight: normal;
+        src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        margin: 1.8rem;
+        padding: 2.8rem;
+        text-decoration: none;
+        }// closes anchor tags
+    }// closes nav bar
         h1{
         display: flex;
         justify-content: center; 
@@ -47,11 +62,11 @@ body{
         font-weight: bold;
         src: url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
         }//closes h1
-    .section1{
+    .section1, .section2{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-content: center;
-        width: 80%;
+        width: 60%;
         border: solid 5px #FB9800;
         margin: 1.8rem;
         padding: 1.8rem;
@@ -68,14 +83,18 @@ body{
             height: 350px;
         }//closes info1
     }//closes section 1
-.section2{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    width: 80%;
-    border: solid 5px #FB9800;
-    margin: 1.8rem;
-    padding: 1.8rem;
+    h2{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        color: #0E373B;
+        font-family: 'Great Vibes', cursive;
+        font-size: 2.5rem;
+        font-weight: bold;
+        width: 40%;
+        margin: 1rem;
+        src: url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+    }// closes h2
     li{
         display: flex;
         justify-content: flex-start;
@@ -89,76 +108,3 @@ body{
         height: 350px;
     }//closes info2
 }
-
-.aboutHeader {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    background-image: url(/images/plp1.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 75%;
-    margin: 1.4rem;
-    width: 100%;
-    }// closes about header
-
-    .gallery {
-        display: flex;
-        justify-content: space-between;
-        align-content: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-    
-        h2{
-            display: flex;
-            justify-content: center;
-            flex-direction: row;
-            color: #0E373B;
-            font-family: 'Great Vibes', cursive;
-            font-size: 2.5rem;
-            font-weight: bold;
-            src: url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-        }// closes h2
-        h3{
-            display: flex;
-            justify-content: center;
-            color: #0E373B;
-            font-family: 'Great Vibes', cursive;
-            font-size: 1.5rem;
-            font-weight: bold;
-            src: url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap'); 
-        }//closes h3
-        .pic1{
-            background-image: url(/images/karmenDurbin.png);
-            width: 250px;
-            height: 250px;
-            margin: 1.8rem;
-            padding: 1.8rem;
-        }// closes pic1
-        .pic2{
-            background-image: url(/images/nickUssery.jpeg);
-            width: 250px;
-            height: 250px;
-            margin: 1.8rem;
-            padding: 1.8rem;
-        }//closes pic2
-        .pic3{
-            background-image: url(/images/prakashSingh.jpeg);
-            width: 250px;
-            height: 250px;
-            margin: 1.8rem;
-            padding: 1.8rem;
-        }// closes pic 3
-        .pic4 {
-            background-image: url(/images/locGiang.jpeg);
-            width: 250px;
-            height: 250px;
-            margin: 1.8rem;
-            padding: 1.8rem;
-        }//closes pic 4
-    }// closes main gallery
-
-
-}//closes body
