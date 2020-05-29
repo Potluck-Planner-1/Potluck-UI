@@ -187,7 +187,7 @@ body .navbar a {
     flex-wrap: wrap;
     height: auto;
     font-size: 0.5;
-    width: 80%;
+    width: 60%;
     margin: 0.4rem;
   }
 }
@@ -197,8 +197,9 @@ body .navbar a {
     flex-wrap: wrap;
     height: auto;
     font-size: 0.5;
-    width: 80%;
-    margin: 0.8rem;
+    width: 60%;
+    margin: 0.5rem;
+    padding: 0.5rem;
   }
 }
 body h1 {
@@ -251,7 +252,7 @@ body .section2 .box1 {
     justify-content: center;
     flex-wrap: wrap;
     height: auto;
-    width: 90%;
+    width: 60%;
     margin: 0.4rem;
     border: none;
   }
@@ -339,13 +340,22 @@ body .box2 {
   text-decoration: none;
 }
 @media only screen and (max-width: 500px) {
+  .wrapper-about .navbar-about a {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    font-size: 0.5;
+    width: 60%;
+    padding: 0.4rem;
+  }
+}
+@media only screen and (max-width: 500px) {
   .wrapper-about nav {
     flex-direction: column;
     flex-wrap: wrap;
     height: auto;
     font-size: 0.5;
-    width: 80%;
-    margin: 0.8rem;
+    width: 60%;
   }
 }
 .wrapper-about .about {
