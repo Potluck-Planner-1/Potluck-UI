@@ -345,6 +345,16 @@ body .box2 {
     flex-wrap: wrap;
     height: auto;
     font-size: 0.5;
+    width: 80%;
+    padding: 0.4rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .wrapper-about .navbar-about {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    font-size: 0.5;
     width: 60%;
     padding: 0.4rem;
   }
@@ -354,7 +364,7 @@ body .box2 {
     flex-direction: column;
     flex-wrap: wrap;
     height: auto;
-    font-size: 0.5;
+    font-size: 0.6;
     width: 60%;
   }
 }
@@ -368,6 +378,13 @@ body .box2 {
   font-size: 8rem;
   font-weight: bold;
   src: url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+}
+@media only screen and (max-width: 500px) {
+  .wrapper-about .about {
+    font-size: 4rem;
+    align-content: center;
+    justify-content: center;
+  }
 }
 .gallery {
   display: flex;

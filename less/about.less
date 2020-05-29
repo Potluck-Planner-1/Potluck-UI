@@ -8,7 +8,6 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    // flex-direction: column;
     flex-wrap: wrap;
     width: auto;
     height: auto;
@@ -54,6 +53,16 @@
             margin: 1.8rem;
             padding: 2.8rem;
             text-decoration: none;
+
+            @media only screen and (max-width: 500px){
+                flex-direction: column;
+                flex-wrap: wrap;
+                height: auto;
+                font-size: .5;
+                width: 80%;
+                padding: .4rem; 
+            }
+            }// closes anchor tags
             @media only screen and (max-width: 500px){
                 flex-direction: column;
                 flex-wrap: wrap;
@@ -62,7 +71,6 @@
                 width: 60%;
                 padding: .4rem; 
             }
-            }// closes anchor tags
         }// closes nav bar
 
         nav{
@@ -70,7 +78,7 @@
                 flex-direction: column;
                 flex-wrap: wrap;
                 height: auto;
-                font-size: .5;
+                font-size: .6;
                 width: 60%;
             }
         }
@@ -84,6 +92,11 @@
         font-size: 8rem;
         font-weight: bold;
         src: url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        @media only screen and (max-width: 500px){
+            font-size: 4rem;
+            align-content: center;
+            justify-content: center;
+        }
         }//closes h1
     }
 
