@@ -160,6 +160,17 @@ body .navbar {
   background-color: #FC7C00;
   padding: 1.8rem;
 }
+@media only screen and (max-width: 500px) {
+  body .navbar {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    font-size: 0.8;
+    width: 80%;
+    height: 20vh;
+    margin: 0.4rem;
+  }
+}
 body .navbar a {
   color: #03161D;
   font-family: 'Montserrat', sans-serif;
@@ -175,9 +186,19 @@ body .navbar a {
     flex-direction: column;
     flex-wrap: wrap;
     height: auto;
-    font-size: 0.8;
+    font-size: 0.5;
     width: 80%;
     margin: 0.4rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  body nav {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    font-size: 0.5;
+    width: 80%;
+    margin: 0.8rem;
   }
 }
 body h1 {
@@ -190,6 +211,13 @@ body h1 {
   font-size: 8rem;
   font-weight: bold;
   src: url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+}
+@media only screen and (max-width: 500px) {
+  body h1 {
+    font-size: 4rem;
+    align-content: center;
+    justify-content: center;
+  }
 }
 body .section1,
 body .section2 {
@@ -225,6 +253,7 @@ body .section2 .box1 {
     height: auto;
     width: 90%;
     margin: 0.4rem;
+    border: none;
   }
 }
 body h2 {
@@ -250,6 +279,13 @@ body li {
 body .box2 {
   width: 350px;
   height: 350px;
+}
+@media only screen and (max-width: 500px) {
+  body .box2 {
+    width: 200px;
+    height: 200px;
+    flex-direction: column;
+  }
 }
 .about-body {
   display: flex;
@@ -301,6 +337,16 @@ body .box2 {
   margin: 1.8rem;
   padding: 2.8rem;
   text-decoration: none;
+}
+@media only screen and (max-width: 500px) {
+  .wrapper-about nav {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    font-size: 0.5;
+    width: 80%;
+    margin: 0.8rem;
+  }
 }
 .wrapper-about .about {
   display: flex;
