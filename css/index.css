@@ -170,6 +170,16 @@ body .navbar a {
   padding: 2.8rem;
   text-decoration: none;
 }
+@media only screen and (max-width: 500px) {
+  body .navbar a {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    font-size: 0.8;
+    width: 80%;
+    margin: 0.4rem;
+  }
+}
 body h1 {
   display: flex;
   justify-content: center;
@@ -204,6 +214,18 @@ body .section1 .box1,
 body .section2 .box1 {
   width: 350px;
   height: 350px;
+}
+@media only screen and (max-width: 500px) {
+  body .section1,
+  body .section2 {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 90%;
+    margin: 0.4rem;
+  }
 }
 body h2 {
   display: flex;

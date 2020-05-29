@@ -49,7 +49,16 @@ body{
         margin: 1.8rem;
         padding: 2.8rem;
         text-decoration: none;
+        @media only screen and (max-width: 500px){
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: auto;
+            font-size: .8;
+            width: 80%;
+            margin: .4rem; 
+        }
         }// closes anchor tags
+
     }// closes nav bar
         h1{
         display: flex;
@@ -82,6 +91,15 @@ body{
             width: 350px;
             height: 350px;
         }//closes info1
+        @media only screen and (max-width: 500px){
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            height: auto;
+            width: 90%;
+            margin: .4rem; 
+        }
     }//closes section 1
     h2{
         display: flex;
