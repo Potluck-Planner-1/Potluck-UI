@@ -5,7 +5,7 @@ body{
         margin: 0;
         padding: 0;
     }
-    background-color: #B4BBC5;
+    background-color: @bg-color;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -49,22 +49,16 @@ body{
         height: 20vh;
         margin: .4rem; 
     }
-        a{
-        color: #03161D;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.6rem;
-        font-weight: normal;
-        src: url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-        margin: 1.8rem;
-        padding: 2.8rem;
-        text-decoration: none;
+        a{ 
+            .a();
+
         @media only screen and (max-width: 500px){
             flex-direction: column;
             flex-wrap: wrap;
             height: auto;
             font-size: .5;
             width: 60%;
-            margin: .4rem; 
+            margin: .9rem; 
         }
         }// closes anchor tags
 
@@ -76,6 +70,7 @@ body{
             height: auto;
             font-size: .5;
             width: 60%;
+            // height: 40%;
             margin: .5rem;
             padding: .5rem; 
         }
